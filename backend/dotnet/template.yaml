@@ -6,7 +6,7 @@ metadata:
   title: .NET template
   description: A .NET template
 spec:
-  owner: trifork-aalborg
+  owner: trifork_aalborg
   type: service
 
   # These parameters are used to generate the input form in the frontend, and are
