@@ -56,7 +56,7 @@ spec:
         allowedHosts: ["github.com"]
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
-        repoVisibility: private
+        repoVisibility: internal
         colaborators:
           - team: "@trifork/aalborg"
             access: "admin"
