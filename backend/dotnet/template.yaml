@@ -58,12 +58,10 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
         repoVisibility: private
         colaborators:
-          - user: aalborg
-            access: admin
-          - user: "@trifork/aalborg"
-            access: admin
-          - user: msthtrifork
-            access: admin
+          - team: "@trifork/aalborg"
+            access: "admin"
+          - team: "trifork/aalborg"
+            access: "admin"
 
     # The final step is to register our new component in the catalog.
     - id: register
