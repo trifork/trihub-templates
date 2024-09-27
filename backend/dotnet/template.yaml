@@ -21,8 +21,7 @@ spec:
           type: string
           description: Unique name of the component
           ui:autofocus: true
-          ui:options:
-            rows: 5
+          ui:field: EntityNamePicker
     - title: Choose a location
       required:
         - repoUrl
