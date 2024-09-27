@@ -32,14 +32,10 @@ spec:
           type: string
           ui:field: RepoUrlPicker
           ui:options:
+            allowedOwners:
+              - trifork
             allowedHosts:
               - github.com
-            requestUserCredentials:
-              secretsKey: USER_OAUTH_TOKEN
-              additionalScopes:
-                github:
-                  - workflow
-                  - repo
 
   # These steps are executed in the scaffolder backend, using data that we gathered
   # via the parameters above.
@@ -61,8 +57,6 @@ spec:
         allowedHosts: ["github.com"]
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
-        # here's where the secret can be used
-        token: ${{ secrets.USER_OAUTH_TOKEN }}
         repoVisibility: private
 
     # The final step is to register our new component in the catalog.
